@@ -22,7 +22,6 @@ unset($_SESSION['result_data']);
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <script src="js/script.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -65,4 +64,5 @@ unset($_SESSION['result_data']);
         </div>
     </div>
 </body>
+
 </html>
