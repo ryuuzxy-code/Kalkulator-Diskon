@@ -15,7 +15,7 @@ Membantu pengguna menghitung **total harga setelah diskon**, berdasarkan input h
 
 ## 🧠 Rumus Perhitungan
 
-Diskon = harga × (diskon / 100)
+Diskon = harga × (diskon / 100)<br>
 Total Harga = harga − diskon
 
 ## 🛠️ Langkah Pengembangan
