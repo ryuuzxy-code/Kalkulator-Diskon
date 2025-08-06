@@ -1,0 +1,151 @@
+/* css/style-hasil.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1f2023, #2d2e32);
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 550px;
+    padding: 20px;
+}
+
+.result-card {
+    background: #25262a;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid #3a3b40;
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0.95);
+    animation: fadeIn 0.5s ease-out forwards;
+    transition: transform 0.3s ease;
+}
+
+.result-header {
+    padding: 25px 30px;
+    background: linear-gradient(135deg, #4a90e2, #2a6cb5);
+    color: #fff;
+    font-weight: 600;
+}
+
+.result-header.error {
+    background: linear-gradient(135deg, #dc3545, #a5283a);
+}
+
+.result-header h2 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.result-body {
+    padding: 30px;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #3a3b40;
+}
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+.result-item span {
+    color: #a0a0a0;
+    font-size: 1rem;
+}
+
+.result-item p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #e0e0e0;
+}
+
+.result-item.highlight p {
+    color: #ff5e5e;
+}
+
+hr {
+    border: none;
+    border-top: 1px dashed #444;
+    margin: 0 30px;
+}
+
+.final-price {
+    text-align: center;
+    padding: 20px;
+    background-color: #2f3034;
+    margin: 20px -30px -30px -30px;
+    border-top: 1px solid #3a3b40;
+}
+
+.final-price span {
+    font-size: 1rem;
+    color: #c0c0c0;
+    font-weight: 400;
+}
+
+.final-price h3 {
+    margin: 5px 0 0 0;
+    font-size: 2.5rem;
+    color: #4a90e2;
+    font-weight: 700;
+}
+
+.error-message {
+    font-size: 1.1rem;
+    color: #ffbaba;
+    background-color: #3a1f1f;
+    border: 1px solid #5f2a2a;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.result-footer {
+    padding: 20px 30px;
+    text-align: center;
+    background-color: #2f3034;
+    border-top: 1px solid #3a3b40;
+}
+
+.btn-back {
+    display: inline-block;
+    padding: 15px;
+    width: 100%;
+    background: linear-gradient(135deg, #4a90e2, #2a6cb5);
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.btn-back:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(74, 144, 226, 0.4);
+}
+
+/* Animasi Keyframes */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
